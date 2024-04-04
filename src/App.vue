@@ -32,6 +32,10 @@ export default {
         console.log(res.data.results);
         store.listSeries = res.data.results;
       })
+   },
+   startSearch(){
+    this.getMovies(),
+    this.getSeries()
    }
   },
 
@@ -44,7 +48,7 @@ export default {
 </script>
 
 <template>
-    
+    <SearchBar @startSearch="startSearch" />
     <CardsContainer type="movie" />
     <CardsContainer type="tv" />
 

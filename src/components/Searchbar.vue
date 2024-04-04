@@ -16,7 +16,7 @@ export default {
     placeholder="Cerca un film"
     type="text">
 
-    <button @click=$emit("startSearch") class="btn btn-primary"> Cerca </button>
+    <button @click=$emit(startSearch) class="btn btn-primary"> Cerca </button>
   </div>
 </template>
 
